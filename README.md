@@ -1,2 +1,0 @@
-# myshcodes
-My things 
