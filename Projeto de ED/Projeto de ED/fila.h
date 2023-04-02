@@ -1,0 +1,1 @@
+ para a manipulação das filas de espera;
