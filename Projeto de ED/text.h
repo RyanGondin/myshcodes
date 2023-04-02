@@ -1,1 +1,0 @@
-para a leitura e manipulação dos dados dos ficheiros de texto;
