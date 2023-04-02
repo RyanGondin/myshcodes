@@ -1,1 +1,0 @@
-para a simulação do funcionamento das caixas e cálculo das medidas de desempenho do sistema.

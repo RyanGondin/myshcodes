@@ -1,1 +1,0 @@
-para a manipulação de Hashing;
