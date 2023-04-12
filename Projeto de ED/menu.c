@@ -1,22 +1,34 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+#include "fila.h"
+#include "fila.c"
+#include "hashing.h"
+#include "hashing.c"
 
 int main() {
     int opcao;
+
+    printf("Hipermercado Iniciado!\n");
+
+    printf("Para continuar o sistema terá de saber quantas caixas iniciais & ativas tem o estabelecimento.\n");
+    printf("Número de caixas é: ");
+    scanf("%d", &numero_caixas);
+
+    printf("Continuando...\n");
 
     do {
         printf("|====================================|\n");
         printf("|          Página Principal          |\n");
         printf("|====================================|\n");
         printf("|                                    |\n");
-        printf("| 1. Carregar dados do arquivo       |\n");
-        printf("| 2. Gravar dados em arquivo         |\n");
-        printf("| 3. Ver histórico de ações          |\n");
+        printf("| 1. Abrir caixa                     |\n");
+        printf("| 2. Fechar Caixa                    |\n");
+        printf("| 3. Mostrar clientes das Caixas     |\n");
+        printf("| 4. Mostrar Compras por Caixas      |\n");
         printf("| 4. Mudar cliente de caixa          |\n");
-        printf("| 5. Abrir nova caixa                |\n");
-        printf("| 6. Fechar caixa menos ocupada      |\n");
-        printf("| 7. Fechar caixa                    |\n");
-        printf("| 8. Pesquisar pessoa na fila        |\n");
-        printf("| 9. Mostrar desempenho do sistema   |\n");
         printf("| 0. Sair                            |\n");
         printf("|                                    |\n");
         printf("|====================================|\n");
@@ -50,9 +62,6 @@ int main() {
             case 8:
                 // código para pesquisar pessoa na fila
                 break;
-            case 9:
-                // código para mostrar desempenho do sistema
-                break;
             case 0:
                 printf("\nObrigado Volte sempre!\n");
                 break;
@@ -60,15 +69,7 @@ int main() {
                 printf("\nOpção inválida\n");
                 printf("\nNota: Opções aceites:\n");
                 printf("-> 0. Sair\n");
-                printf("-> 1. Carregar dados do arquivo\n");
-                printf("-> 2. Gravar dados em arquivo\n");
-                printf("-> 3. Ver histórico de ações\n");
-                printf("-> 4. Mudar cliente de caixa\n");
-                printf("-> 5. Abrir nova caixa\n");
-                printf("-> 6. Fechar caixa menos ocupada\n");
-                printf("-> 7. Fechar caixa\n");
-                printf("-> 8. Pesquisar pessoa na fila\n");
-                printf("-> 9. Mostrar desempenho do sistema\n");
+
         }
 
         printf("\n");
